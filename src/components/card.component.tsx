@@ -20,9 +20,9 @@ export class CardComponent extends React.Component<IProps, IState> {
 
     render() {
         if(this.state.face) {
-            return (<div className="white">{this.props.name}</div>);
+            return (<div className="face">{this.props.name}</div>);
         } else {
-            return (<div className="grey">{this.props.name}</div>);
+            return (<div className="back">{this.props.name}</div>);
         }
     }
 }
