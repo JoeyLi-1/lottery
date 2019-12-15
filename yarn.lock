@@ -1270,6 +1270,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.3.tgz#bdfd69d61e464dcc81b25159c270d75a73c1a636"
   integrity sha512-Il2DtDVRGDcqjDtE+rF8iqg1CArehSK84HZJCT7AMITlyXRBpuPhqGLDQMowraqqu1coEaimg4ZOqggt6L6L+A==
 
+"@types/lodash@^4.14.149":
+  version "4.14.149"
+  resolved "https://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.149.tgz#1342d63d948c6062838fbf961012f74d4e638440"
+  integrity sha1-E0LWPZSMYGKDj7+WEBL3TU5jhEA=
+
 "@types/node@12.12.14":
   version "12.12.14"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"
@@ -7849,7 +7854,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@15.x, prop-types@^15.0.0, prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.x, prop-types@^15.0.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8013,6 +8018,11 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-animations@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/react-animations/download/react-animations-1.0.0.tgz#d96222920dfeabec8984d9b2ef2c5a5aadb40f06"
+  integrity sha1-2WIikg3+q+yJhNmy7yxaWq20DwY=
+
 react-app-polyfill@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/react-app-polyfill/-/react-app-polyfill-1.0.4.tgz#4dd2636846b585c2d842b1e44e1bc29044345874"
@@ -8079,6 +8089,13 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
 
+react-flip-toolkit@^7.0.7:
+  version "7.0.7"
+  resolved "https://registry.npm.taobao.org/react-flip-toolkit/download/react-flip-toolkit-7.0.7.tgz#a50d455ff4f9f9961042a7a0eb23bd5a2154c963"
+  integrity sha1-pQ1FX/T5+ZYQQqeg6yO9WiFUyWM=
+  dependencies:
+    rematrix "0.2.2"
+
 react-grid-layout@^0.17.1:
   version "0.17.1"
   resolved "https://registry.yarnpkg.com/react-grid-layout/-/react-grid-layout-0.17.1.tgz#0b75c72e5b7d7085f0f0054e160b31298971c5e2"
@@ -8095,15 +8112,15 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.1.tgz#0612786bf19df406502d935494f0450b40b8294f"
   integrity sha512-BXUMf9sIOPXXZWqr7+c5SeOKJykyVr2u0UDzEf4LNGc6taGkQe1A9DFD07umCIXz45RLr9oAAwZbAJ0Pkknfaw==
 
-react-lifecycles-compat@^3.0.0:
+react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
 react-modal@^3.11.1:
   version "3.11.1"
-  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.11.1.tgz#2a0d6877c9e98f123939ea92d2bb4ad7fa5a17f9"
-  integrity sha512-8uN744Yq0X2lbfSLxsEEc2UV3RjSRb4yDVxRQ1aGzPo86QjNOwhQSukDb8U8kR+636TRTvfMren10fgOjAy9eA==
+  resolved "https://registry.npm.taobao.org/react-modal/download/react-modal-3.11.1.tgz#2a0d6877c9e98f123939ea92d2bb4ad7fa5a17f9"
+  integrity sha1-Kg1od8npjxI5OeqS0rtK1/paF/k=
   dependencies:
     exenv "^1.2.0"
     prop-types "^15.5.10"
@@ -8178,6 +8195,27 @@ react-scripts@3.2.0:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.0.7"
+
+react-split-pane@^0.1.89:
+  version "0.1.89"
+  resolved "https://registry.npm.taobao.org/react-split-pane/download/react-split-pane-0.1.89.tgz#e111e5f7e6e1cd3c86a5aa0d9ddf987c2165f0d0"
+  integrity sha1-4RHl9+bhzTyGpaoNnd+YfCFl8NA=
+  dependencies:
+    prop-types "^15.5.10"
+    react-lifecycles-compat "^3.0.4"
+    react-style-proptype "^3.0.0"
+
+react-splitter-layout@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/react-splitter-layout/download/react-splitter-layout-4.0.0.tgz#70b43ca6a78c056f5e5fbf29c67b597f040fbf2e"
+  integrity sha1-cLQ8pqeMBW9eX78pxntZfwQPvy4=
+
+react-style-proptype@^3.0.0:
+  version "3.2.2"
+  resolved "https://registry.npm.taobao.org/react-style-proptype/download/react-style-proptype-3.2.2.tgz#d8e998e62ce79ec35b087252b90f19f1c33968a0"
+  integrity sha1-2OmY5iznnsNbCHJSuQ8Z8cM5aKA=
+  dependencies:
+    prop-types "^15.5.4"
 
 react@^16.12.0:
   version "16.12.0"
@@ -8349,6 +8387,11 @@ relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
+
+rematrix@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npm.taobao.org/rematrix/download/rematrix-0.2.2.tgz#c96a050260782db9908904885991256e23beda5d"
+  integrity sha1-yWoFAmB4LbmQiQSIWZElbiO+2l0=
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
