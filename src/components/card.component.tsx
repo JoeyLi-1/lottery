@@ -1,7 +1,9 @@
 import React from 'react';
-import '../App.css';
 import { Flipper, Flipped } from "react-flip-toolkit";
 import _ from 'lodash';
+import SkyLight from 'react-skylight';
+import { ImageButtonComponent } from './imageBtn.component';
+import styles from './card';
 
 interface IProps {
     name?: string;
@@ -10,6 +12,7 @@ interface IProps {
 interface IState {
     data: any;
     timer: any;
+    simpleDialog: any;
 }
 
 export class CardComponent extends React.Component<IProps, IState> {
@@ -18,7 +21,8 @@ export class CardComponent extends React.Component<IProps, IState> {
         super(props);
         this.state = {
             data: [],
-            timer: undefined
+            timer: undefined,
+            simpleDialog: undefined
         };
     }
 
@@ -69,21 +73,39 @@ export class CardComponent extends React.Component<IProps, IState> {
         this.setState({ timer: undefined });
     }
 
+    setModalRef = (ref: any) => {
+        this.setState({ simpleDialog: ref });
+    }
+
+    openModal = () => {
+        this.state.simpleDialog.show();
+    }
+
     render() {
-        return (<Flipper flipKey={this.state.data.join("")}>
-        <button onClick={this.start}> Start</button>
-        <button onClick={this.stop}> Stop</button>
-        <div className="grid">
-            <div className="column">
-                {this.renderColumn(0)}
-            </div>
-            <div className="column">
-                {this.renderColumn(1)}
-            </div>
-            <div className="column">
-                {this.renderColumn(2)}
-            </div>
-        </div>
-    </Flipper>)
+        return (
+            <div>
+                <ImageButtonComponent onClick={this.openModal}></ImageButtonComponent>
+                <SkyLight 
+                    hideOnOverlayClicked 
+                    ref={this.setModalRef} 
+                    dialogStyles={styles.dialogStyles}
+                    transitionDuration={1000}>
+                    <Flipper flipKey={this.state.data.join("")}>
+                        <div className="grid">
+                            <div className="column">
+                                {this.renderColumn(0)}
+                            </div>
+                            <div className="column">
+                                {this.renderColumn(1)}
+                            </div>
+                            <div className="column">
+                                {this.renderColumn(2)}
+                            </div>
+                        </div>
+                    </Flipper>
+                    <button onClick={this.start}> Start</button>
+                    <button onClick={this.stop}> Stop</button>
+                </SkyLight>
+            </div>)
     }
 }
